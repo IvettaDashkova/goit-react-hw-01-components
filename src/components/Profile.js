@@ -1,5 +1,5 @@
 //import React from 'react';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import defaultImg from '../components/default.svg';
 
 const Profile = ({ avatar, name, tag, location, stats }) => (
