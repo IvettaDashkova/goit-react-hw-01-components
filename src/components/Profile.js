@@ -1,5 +1,5 @@
 //import React from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import defaultImg from '../components/default.svg';
 
 const Profile = ({ avatar, name, tag, location, stats }) => (
@@ -7,7 +7,7 @@ const Profile = ({ avatar, name, tag, location, stats }) => (
     <div>
       <img src={avatar} alt="Аватар пользователя" />
       <p>{name}</p>
-      <p>{tag123}</p>
+      <p>{tag}</p>
       <p>{location}</p>
     </div>
 
