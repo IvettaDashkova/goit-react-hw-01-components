@@ -1,6 +1,6 @@
 //import React from 'react';
 import Profile from './components/Profile';
-import users from './user.json';
+import user from './user.json';
 
 function App() {
   return (
