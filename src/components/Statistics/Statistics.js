@@ -4,8 +4,9 @@ import styles from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
-    <h2 className={styles.title}>{title.toUpperCase()}</h2>
-
+    {title.length > 0 && (
+      <h2 className={styles.title}>{title.toUpperCase()}</h2>
+    )}
     <ul className={styles.list}>
       {stats.map(stat => (
         <li
@@ -22,10 +23,12 @@ const Statistics = ({ title, stats }) => (
     </ul>
   </section>
 );
-
+Statistics.defaultProps = {
+    title: '',
+}
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.arrayOf(PropTypes.object)
+  stats: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 function backgroundColorRandom() {

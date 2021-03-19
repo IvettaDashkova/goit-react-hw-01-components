@@ -6,7 +6,7 @@ import statisticalData from './statistical-data.json';
 
 function App() {
   return (
-    <div>
+    <>
       <Profile
         avatar={user.avatar}
         name={user.name}
@@ -14,10 +14,8 @@ function App() {
         location={user.location}
         stats={user.stats}
       />
-      <Statistics
-        title="Upload stats"
-        stats={statisticalData} />
-    </div>
+      <Statistics title="Upload stats" stats={statisticalData} />
+    </>
   );
 }
 
