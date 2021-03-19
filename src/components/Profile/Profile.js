@@ -4,7 +4,7 @@ import defaultImg from './default.svg';
 import styles from './Profile.module.css'
 
 const Profile = ({ avatar, name, tag, location, stats }) => (
-  <div className={styles.profile}>
+  <section className={styles.profile}>
     <div className={styles.box}>
       <img className={styles.img} src={avatar} alt="Аватар пользователя" />
       <p className={styles.title}>{name}</p>
@@ -26,7 +26,7 @@ const Profile = ({ avatar, name, tag, location, stats }) => (
         <span>{stats.likes}</span>
       </li>
     </ul>
-  </div>
+  </section>
 );
 Profile.defaultProps = {
   avatar: defaultImg,
